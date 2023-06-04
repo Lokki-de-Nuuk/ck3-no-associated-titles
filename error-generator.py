@@ -19,5 +19,5 @@ def error_string():
     return formatted_string
 
 # [14:39:02][landedtitlemanager.cpp:980]: Province '11957' has no associated title in common/landed_titles. FIX THIS. Game will probably crash if you don't
-
-print(error_string())
+output = '\n'.join(error_string() for _ in range(10))
+print(output)
